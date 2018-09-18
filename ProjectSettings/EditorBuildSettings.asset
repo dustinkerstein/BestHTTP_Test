@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/SceneLoader.unity
+    guid: 1df8d59b70851154b8192b35cc413a33
+  - enabled: 1
+    path: Assets/DownloadSpeedTest_Test1.unity
+    guid: 3f6ac1db4bf9b6a4ca4407256064dd33
+  - enabled: 1
+    path: Assets/DownloadSpeedTest_Test2.unity
+    guid: 9cbb3c31394271c4cbe0ac795c141d31
+  - enabled: 1
+    path: Assets/DownloadSpeedTest_Test3.unity
+    guid: 69385c40248b7454ca8448d5bb20bcdd
