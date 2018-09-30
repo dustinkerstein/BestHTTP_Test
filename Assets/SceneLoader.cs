@@ -17,6 +17,10 @@ public class SceneLoader : MonoBehaviour {
 		SceneManager.LoadScene ("DownloadSpeedTest_Test3");
 	}
 
+	public void LoadTest4() {
+		SceneManager.LoadScene ("DownloadSpeedTest_Test4");
+	}
+
 	public void LoadSceneLoader() {
 		SceneManager.LoadScene ("SceneLoader");
 	}

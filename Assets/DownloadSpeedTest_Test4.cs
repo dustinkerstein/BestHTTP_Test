@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using BestHTTP;
 
-public sealed class DownloadSpeedTest_Test2 : MonoBehaviour
+public sealed class DownloadSpeedTest_Test4 : MonoBehaviour
 {
 	public UnityEngine.UI.Text statusText;
 
@@ -13,6 +13,11 @@ public sealed class DownloadSpeedTest_Test2 : MonoBehaviour
 	private void Start()
 	{
 		Application.runInBackground = true;
+		HTTPUpdateDelegator.IsThreaded = true;
+		HTTPManager.KeepAliveDefaultValue = true;
+		HTTPManager.IsCookiesEnabled = false;
+		HTTPManager.EnablePrivateBrowsing = true;
+		HTTPManager.IsCachingDisabled = false;
 
 		int workerThreads, completionThreads;
 		//System.Threading.ThreadPool.GetAvailableThreads(out workerThreads, out completionThreads);
@@ -28,7 +33,7 @@ public sealed class DownloadSpeedTest_Test2 : MonoBehaviour
 	public void On_StartTestButtonClicked()
 	{
 		manager = new ConcurrentDownloadManager_Test1();
-		manager.Download(new BestHTTP.HTTPRequest(new Uri("http://s3.amazonaws.com/data.panomoments.com/processed/58a7514e550d37000bfd46d2/5a90ce21d3df99000e981d11/uhd_dashinit.mp4")), 8);
+		manager.Download(new BestHTTP.HTTPRequest(new Uri("http://s3.amazonaws.com/data.panomoments.com/processed/58a7514e550d37000bfd46d2/5a90ce21d3df99000e981d11/uhd_dashinit.mp4")), 32);
 	}
 
 	private void Update()

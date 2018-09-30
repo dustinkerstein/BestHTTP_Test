@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DownloadSpeedTest_Test3.unity
     guid: 69385c40248b7454ca8448d5bb20bcdd
+  - enabled: 1
+    path: Assets/DownloadSpeedTest_Test4.unity
+    guid: 6276bd33e7b02d049907ead2b08a2cdc

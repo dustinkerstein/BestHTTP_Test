@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using BestHTTP;
 
 public sealed class DownloadSpeedTest_Test1 : MonoBehaviour
 {
@@ -12,7 +13,12 @@ public sealed class DownloadSpeedTest_Test1 : MonoBehaviour
     private void Start()
     {
         Application.runInBackground = true;
-
+        HTTPUpdateDelegator.IsThreaded = true;
+        HTTPManager.KeepAliveDefaultValue = true;
+        HTTPManager.IsCookiesEnabled = false;
+        HTTPManager.EnablePrivateBrowsing = true;
+        HTTPManager.IsCachingDisabled = false;
+        
         int workerThreads, completionThreads;
         //System.Threading.ThreadPool.GetAvailableThreads(out workerThreads, out completionThreads);
         //Debug.Log("Available worker threads: " + workerThreads);
