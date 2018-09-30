@@ -28,7 +28,7 @@ public sealed class DownloadSpeedTest_Test3 : MonoBehaviour
 	public void On_StartTestButtonClicked()
 	{
 		manager = new ConcurrentDownloadManager_Test1();
-		manager.Download(new BestHTTP.HTTPRequest(new Uri("http://s3.amazonaws.com/data.panomoments.com/processed/58a7514e550d37000bfd46d2/5a90ce21d3df99000e981d11/uhd_dashinit.mp4")), 32);
+		manager.Download(new BestHTTP.HTTPRequest(new Uri("http://s3.amazonaws.com/data.panomoments.com/processed/58a7514e550d37000bfd46d2/5a90ce21d3df99000e981d11/uhd_dashinit.mp4")), 16);
 	}
 
 	private void Update()

@@ -13,11 +13,6 @@ public sealed class DownloadSpeedTest_Test4 : MonoBehaviour
 	private void Start()
 	{
 		Application.runInBackground = true;
-		HTTPUpdateDelegator.IsThreaded = true;
-		HTTPManager.KeepAliveDefaultValue = true;
-		HTTPManager.IsCookiesEnabled = false;
-		HTTPManager.EnablePrivateBrowsing = true;
-		HTTPManager.IsCachingDisabled = false;
 
 		int workerThreads, completionThreads;
 		//System.Threading.ThreadPool.GetAvailableThreads(out workerThreads, out completionThreads);
